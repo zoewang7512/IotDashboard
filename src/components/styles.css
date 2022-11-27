@@ -1,0 +1,127 @@
+.home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.header {
+  background-color: black;
+  text-align: start;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+/*calendar*/
+.react-calendar {
+  width: 300px;
+  max-width: 100%;
+  background-color: #222;
+  color: #fff;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+  margin: 1rem;
+}
+/*日曆標題*/
+.react-calendar__navigation button {
+  color: #ff6d28;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+}
+/*日曆標題可以按的按鈕的hover效果*/
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #222;
+}
+/*日曆標題無法按的按鈕設計*/
+.react-calendar__navigation button[disabled] {
+  background-color: #222;
+  color: #222;
+}
+abbr[title] {
+  text-decoration: none;
+}
+
+.react-calendar__tile {
+  color: #fff;
+}
+
+.react-calendar__tile__weekday {
+  color: red;
+}
+
+/*日期可以選擇的hover效果*/
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #ff6d28;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #222222;
+  color: #222;
+}
+
+/*今天*/
+.react-calendar__tile--now {
+  background-color: #222222;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #ff6d28;
+}
+/*今天華過去及選取*/
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #6f48eb33;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #ff6d28;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #ff6d28;
+  color: white;
+  font-weight: bold;
+}
+
+.fuelProgressbar {
+  padding: 0 1em;
+  width: 150px;
+  height: 150px;
+}
+
+.elecProgressbar {
+  padding: 0 1em;
+  width: 150px;
+  height: 150px;
+}
+
+.card {
+  height: 135px;
+  margin: 0.5rem 0%;
+}
+
+.card-title {
+  text-align: start;
+}
+.card-text {
+  text-align: end;
+  font-size: 3rem;
+}
+.tr td {
+  padding: 1rem;
+}
+
+/*medium size*/
+@media (max-width: 771px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
